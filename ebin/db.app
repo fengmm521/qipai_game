@@ -1,0 +1,13 @@
+{application,db,
+             [{description,"Erlang database driver"},
+              {vsn,"2.1.1"},
+              {registered,[]},
+              {applications,[kernel,stdlib]},
+              {mod,{db_app,[]}},
+              {env,[{threadlen,10}]},
+              {modules,[qpgame_app,qpgame_log,qpgame_sup,qpgame_util,testMode,
+                        db_Tool,db_api,db_app,db_conn,db_conn_server,db_stmt,
+                        db_sup,db_util,hall_cache,hall_element,hall_store,
+                        hall_sup,login_server,login_sup,room_cache,
+                        room_element,room_store,room_sup,player_cache,
+                        player_element,player_store,player_sup,ossp_uuid]}]}.

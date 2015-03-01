@@ -1,0 +1,25 @@
+{application, qipai_game,
+ [{description, "A qipai game server"},
+  {vsn, "0.1.0"},
+  {modules, [
+             qpgame_app,
+             qpgame_sup,
+             qpgame_log,
+             login_sup,
+             login_server,
+             user_sup,
+             user_element,
+             room_sup,
+             gameroom_element,
+             hall_element,
+             db_sup,
+             db_conn_server,
+             db_conn,
+             db_stmt,
+             db_util
+            ]},
+  {registered, [qpgame_sup]},
+  {applications, [kernel, stdlib]},
+  {mod, {qpgame_app,[]}},
+  {env, [{gameport,8009},{threadLen,10}]}
+ ]}.
